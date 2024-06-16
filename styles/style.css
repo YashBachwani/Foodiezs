@@ -1,0 +1,265 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    background-repeat: no-repeat;
+    
+}
+.search{
+    background-color: rgb(253, 167, 7);
+}
+
+.header{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+.top{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding:10px;
+}
+
+.logo{
+    font-size: 25px;
+    color:orange;
+    padding-left: 50px;
+    filter: drop-shadow(1px 1px 10px orange);
+}
+
+.nav{
+    left:-180px;
+}
+
+a{
+    padding:5px 15px;
+    color:orange;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+    text-decoration: underline;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search{
+    font-size: 25px;
+}
+.search input{
+    height:30px;
+}
+.search i,input{
+    padding:5px 20px;
+}
+.search i,input:hover{
+    filter: drop-shadow(1px 1px 10px whitesmoke);
+    transition: ease-in-out 1s;
+}
+
+
+/***************heading**************/
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:60px;
+}
+
+.mainright{
+    margin:-60px;
+}
+.right{
+    width:400px;
+    height: 400px;
+    background-image: url('../public/Images/food.png');
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation: shake 13s ease-in-out infinite ;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.right::before{
+    width:390px;
+    height:390px;
+    border:3px solid rgb(253, 167, 7);
+    content: '';
+    position: absolute;
+    border-radius: 430px;
+    padding:10px;
+}
+/***************left part***********************/
+.left p{
+    color:white;
+    font-size: 35px;
+    initial-letter: 1px;
+    font-style: italic;
+}
+
+
+.left h1{
+    font-size: 90px;
+    color: whitesmoke;
+}
+
+.left p:nth-child(3){
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.left button{
+    width:150px;
+    height:30px;
+    border-radius: 50px;
+    font-size: 15px;
+    border:2px solid orange;
+    background-color: transparent;
+    color: white;
+    margin:20px 0;   
+}
+.left button:hover{
+    filter: drop-shadow(1px 1px 10px orange);
+    transition: ease-in-out 0.5s;
+}
+
+
+/*********************social media**********/
+.socal-media{
+    position:absolute;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:40px;
+    height:200px;
+    background-color: rgba(255, 255, 255, 0.425);
+    font-size: 25px;
+}
+
+
+
+.socal-media i:hover{
+    color: orange;
+    filter: drop-shadow(1px 1px 10px orange);
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-solid:hover{
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+/***********Menu*********/
+
+.menustyle{
+    background-color: rgb(253, 167, 7);
+    width:98.7vw;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:30px;
+    padding:40px;
+    background-size: cover;
+}
+.menu .burger,.pizza,.pasta,.manchurian,.cakes,.salad,.drinks,.sweets{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+}
+
+.burger,.pizza,.pasta,.manchurian,.cakes,.salad,.drinks,.sweets{
+    background-color: rgb(255, 253, 253);
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.burgerimg img,.pizza img,.pasta img,.manchurian img,.cakes img,.salad img,.drinks img ,.sweets img{
+    width:200px;
+    height: 200px;
+    border-radius: 350px;
+    mix-blend-mode:multiply;
+    object-fit: cover;    
+}
+
+.burgerdtl,.pizzadtl,.pastadtl,.manchuriandtl,.cakesdtl,.saladdtl,.drinksdtl,.sweetdtl{
+    color:black;
+}
+
+.burger:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.pizza:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.pasta:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.manchurian:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.cakes:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.salad:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.drinks:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.sweets:hover{
+    filter: drop-shadow( 5px 3px 10px white);
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+
+
+
+
+
